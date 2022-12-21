@@ -20,16 +20,19 @@ class KeyBoardSound:
     def __init__(self, mode='random_sound'):
         self.mode = mode
         self.sound_list = os.listdir('sound')
+        if len(self.sound_list)<0:
+              sys.exit()
         keyboard.hook(self.keyboard_sound_program)
         # stop when press 'esc'
         keyboard.wait('esc')
     def play_sound(self):
         sound_file = 'sound/' + self.sound_list[random.randint(0, len(self.sound_list)-1)]
-        playsound.playsound(resource_path(sound_file))
+        playsound.playsound(sound_file)
         
     def keyboard_sound_program(self, event):
         if event.event_type == 'down':
             print(event)
+            # print(event.name)
             threading.Thread(target=self.play_sound).start()
 
 if __name__ == '__main__':
