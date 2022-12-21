@@ -17,3 +17,12 @@
 版本 1.1:
 * playsound 模塊有 bug:
   * 請進入模塊腳本將此行 ```py command = ' '.join(command).encode('utf-16')``` 更改成 ```py command = ' '.join(command)``` 因為 python3 使用 utf-8 編碼
+
+版本 1.2:
+* 新增自定義模式
+* 程式會讀取 ```setting.txt```
+  * 設定目前可以更改模式和鍵盤按鍵的音效
+    * 設定模式需要用這個格式 $\rightarrow$ ```mode=custom``` 或 ```mode=random```
+      * custom 模式可以用來更改鍵位的音效，而 random 模式則是隨機撥放 sound 資料夾的音效
+    * 設定鍵盤按鍵的音效需要用這個格式 $\rightarrow$ ```key:sample.mp3``` key 的位置要放英文的小寫
+      * 只有有設定的按鍵在 custom 模式下，才能夠更改成按鍵的音效
