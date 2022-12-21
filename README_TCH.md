@@ -14,6 +14,6 @@
 * 按 'esc' 停止程式
 * 請放 mp3 進入 sound 資料夾
 
-Ver 1.1:
+版本 1.1:
 * playsound 模塊有 bug:
   * 請進入模塊腳本將此行 ```py command = ' '.join(command).encode('utf-16')``` 更改成 ```py command = ' '.join(command)``` 因為 python3 使用 utf-8 編碼
