@@ -1,7 +1,7 @@
 [English](README.md) | 繁體中文
 
 # Python-KeyBoard-Sound
-一個可以改變鍵盤聲音的程式。
+一個可以改變鍵盤聲音的程式：自定義鍵盤，取得自己的老婆吧！
 
 ## 可以在 [itch.io](https://jingshing.itch.io/keyboard-sound-player) 取得這個程式了！
 
