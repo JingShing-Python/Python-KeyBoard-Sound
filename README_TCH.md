@@ -28,3 +28,16 @@
       * custom 模式可以用來更改鍵位的音效，而 random 模式則是隨機撥放 sound 資料夾的音效
     * 設定鍵盤按鍵的音效需要用這個格式 $\rightarrow$ ```key:sample.mp3``` key 的位置要放英文的小寫
       * 只有有設定的按鍵在 custom 模式下，才能夠更改成按鍵的音效
+版本 1.2.1
+* 我更改了 ```playsound.py``` 從 行60 開始:
+```py
+try:
+     exceptionMessage = ('\n    Error ' + str(errorCode) + ' for command:'
+                         '\n        ' + command.decode('utf-16') +
+                         '\n    ' + errorBuffer.raw.decode('utf-16').rstrip('\0'))
+     logger.error(exceptionMessage)
+     raise PlaysoundException(exceptionMessage)
+ except:
+     pass
+```
+* 這個可以修復多線程的bug，原本會導致字串和位元組轉換的類型錯誤修正
