@@ -26,3 +26,16 @@ Ver 1.2:
       * custom can be use for edit key and random is for random play sound in sound folder
     * setting key with this format $\rightarrow$ ```key:sample.mp3``` the key need to be lower case.
       * it will only play sound when you press the key in the setting in custom mode
+Ver 1.2.1
+* I also edit the ```playsound.py``` start from line60:
+```py
+try:
+     exceptionMessage = ('\n    Error ' + str(errorCode) + ' for command:'
+                         '\n        ' + command.decode('utf-16') +
+                         '\n    ' + errorBuffer.raw.decode('utf-16').rstrip('\0'))
+     logger.error(exceptionMessage)
+     raise PlaysoundException(exceptionMessage)
+ except:
+     pass
+```
+* This will fixed thread error. Some string and byte decode error.
