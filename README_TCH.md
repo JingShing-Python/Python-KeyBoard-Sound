@@ -3,6 +3,8 @@
 # Python-KeyBoard-Sound
 一個可以改變鍵盤聲音的程式。
 
+## 可以在 [itch.io](https://jingshing.itch.io/keyboard-sound-player) 取得這個程式了！
+
 ## 所需的模組
 有兩種不同的方式(腳本)開啟這個程式
 
