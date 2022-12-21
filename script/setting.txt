@@ -1,0 +1,6 @@
+# mode can be custom or random
+# format->mode=random
+mode=custom
+# setting key need to be lower case
+# format->key:sample.mp3
+a:example.mp3
