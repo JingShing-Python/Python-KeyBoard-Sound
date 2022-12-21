@@ -2,6 +2,8 @@ English | [繁體中文](README_TCH.md)
 # Python-KeyBoard-Sound
 A program make you custom your own keyboard sound.
 
+## You can get this tool on [itch.io](https://jingshing.itch.io/keyboard-sound-player) now
+
 ## Require modules
 There are two method(scripts) to make custom keyboard sound.
 
