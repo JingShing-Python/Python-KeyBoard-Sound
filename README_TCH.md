@@ -1,4 +1,4 @@
-[English](README_TCH.md) | 繁體中文
+[English](README.md) | 繁體中文
 
 # Python-KeyBoard-Sound
 一個可以改變鍵盤聲音的程式。
