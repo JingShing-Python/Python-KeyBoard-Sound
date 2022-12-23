@@ -63,13 +63,17 @@ class KeyBoardSound:
                 playsound.playsound(sound_file)
             except:
                 pass
-        
+
     def keyboard_sound_program(self, event):
         if event.event_type == 'down':
             # set key to the pressed key
             self.pressed_key = event.name
             # using thread to play multiple sound at same time
-            threading.Thread(target=self.play_sound).start()
+            try:
+                threading.Thread(target=self.play_sound).start()
+            except:
+                pass
 
 if __name__ == '__main__':
-      key_board_sound = KeyBoardSound()
+    print('made by: JingShing')
+    key_board_sound = KeyBoardSound()
